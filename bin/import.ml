@@ -16,11 +16,11 @@ include struct
   module Dpath = Dpath
   module Findlib = Dune_rules.Findlib
   module Diff_promotion = Diff_promotion
-  module Cached_digest = Cached_digest
   module Targets = Targets
   module Context_name = Context_name
 end
 
+module Cached_digest = Dune_digest.Cached_digest
 module Execution_env = Dune_util.Execution_env
 
 include struct
@@ -37,6 +37,9 @@ include struct
   module Source_tree = Source_tree
   module Dune_file = Dune_file
   module Library = Library
+  module Melange = Melange
+  module Melange_stanzas = Melange_stanzas
+  module Executables = Executables
 end
 
 include struct
